@@ -7,7 +7,7 @@ const PokemonList = ({pokemons}) => {
             {pokemons.map((pokemon)=>{
                 return <PokemonCard 
                 name={pokemon.name} 
-                key={pokemon.name}
+                key={pokemon.id}
                 image={pokemon.sprites.front_default}
                 abilities={pokemon.abilities}
                 type={pokemon.types}
